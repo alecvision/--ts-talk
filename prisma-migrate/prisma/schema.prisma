@@ -1,0 +1,70 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model city {
+  city_id    Int     @id
+  city_name  String  @db.VarChar(450)
+  country_id Int
+  country    country @relation(fields: [country_id], references: [country_id], onDelete: NoAction, onUpdate: NoAction, map: "fk_country")
+  store      store[]
+}
+
+model country {
+  country_id   Int    @id
+  country_name String @db.VarChar(450)
+  city         city[]
+}
+
+model order_status {
+  order_status_id String      @id @db.VarChar(200)
+  update_at       DateTime?   @db.Timestamp(6)
+  sale_id         String      @db.VarChar(200)
+  status_name_id  Int
+  sale            sale        @relation(fields: [sale_id], references: [sale_id], onDelete: NoAction, onUpdate: NoAction, map: "fk_sale")
+  status_name     status_name @relation(fields: [status_name_id], references: [status_name_id], onDelete: NoAction, onUpdate: NoAction, map: "fk_status_name")
+}
+
+model product {
+  product_id Int    @id
+  name       String @db.VarChar(250)
+  sale       sale[]
+}
+
+model sale {
+  sale_id      String         @id @db.VarChar(200)
+  amount       Decimal        @db.Decimal(20, 3)
+  date_sale    DateTime?      @db.Timestamp(6)
+  product_id   Int
+  user_id      Int
+  store_id     Int
+  product      product        @relation(fields: [product_id], references: [product_id], onDelete: NoAction, onUpdate: NoAction, map: "fk_product")
+  store        store          @relation(fields: [store_id], references: [store_id], onDelete: NoAction, onUpdate: NoAction, map: "fk_store")
+  users        users          @relation(fields: [user_id], references: [user_id], onDelete: NoAction, onUpdate: NoAction, map: "fk_user")
+  order_status order_status[]
+}
+
+model status_name {
+  status_name_id Int            @id
+  status_name    String         @db.VarChar(450)
+  order_status   order_status[]
+}
+
+model store {
+  store_id Int    @id
+  name     String @db.VarChar(250)
+  city_id  Int
+  city     city   @relation(fields: [city_id], references: [city_id], onDelete: NoAction, onUpdate: NoAction, map: "fk_city")
+  sale     sale[]
+}
+
+model users {
+  user_id Int    @id
+  name    String @db.VarChar(250)
+  sale    sale[]
+}
