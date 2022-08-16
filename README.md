@@ -6,19 +6,22 @@ This repo contains resources from my talk on Tuesday, Auguest 16 2022 for the OC
 All of the examples in this repo (and many more!) can be found here: https://github.com/dzharii/awesome-typescript
 
 **_HIGHLIGHTS_**
-[Matt Pocock on Youtube](https://www.youtube.com/c/MattPocockUk): Excellent TypeScript pro-tips in bite-size chuncks
-[Jack Herrington on Youtube](https://www.youtube.com/c/JackHerrington): Fun, fast-paced videos covering so many full-stack TypeScript technologies, with a focus on production environments.
-[No BS TS](https://no-bs-ts.myshopify.com/): A book that's all about getting you up to speed on TypeScript as fast, and as practically as possible.
-[TypeScript Cheat Sheets](https://github.com/typescript-cheatsheets): A collection of the best TypeScript cheatsheets for almost any framework!
-[Design Patterns in TypeScript](https://github.com/torokmark/design_patterns_in_typescript): The 'Gang of Four' Design Patterns in TypeScript
-[ts-migrate](https://github.com/airbnb/ts-migrate/tree/master/packages/ts-migrate): A tool to help migratge your JavaScript codebase to TypeScript
-[Prisma](https://www.prisma.io/) A Node.js/TypeScript ORM with powerful tools for generating APIs and Schemas from existing databases
-[Zod](https://github.com/colinhacks/zod): A TypeScript first runtime validation library
-[tRPC](https://github.com/trpc/trpc): End-to-end type-safe APIs without GraphQL
-[prisma-trpc-generator](https://github.com/omar-dulaimi/prisma-trpc-generator): Auto-generate tRPC APIs from your Prisma schemas
-[zod-prisma](https://github.com/CarterGrimmeisen/zod-prisma): Automatically generate Zod validators from your Prisma schemas
-[transform.tools](https://transform.tools/) A tool that can help transform code between Flow/Typescript/JSON Schema/GraphQL and so much more!
-[FreeCodeCamp: How to add TypeScript to a JavaScript Project](https://www.freecodecamp.org/news/how-to-add-typescript-to-a-javascript-project/)
+ - [Matt Pocock on Youtube](https://www.youtube.com/c/MattPocockUk): Excellent TypeScript pro-tips in bite-size chuncks
+ - [Jack Herrington on Youtube](https://www.youtube.com/c/JackHerrington): Fun, fast-paced videos covering so many full-stack TypeScript technologies, with a focus on production environments.
+ - [No BS TS](https://no-bs-ts.myshopify.com/): A book that's all about getting you up to speed on TypeScript as fast, and as practically as possible.
+ - [TypeScript Cheat Sheets](https://github.com/typescript-cheatsheets): A collection of the best TypeScript cheatsheets for almost any framework!
+ - [Design Patterns in TypeScript](https://github.com/torokmark/design_patterns_in_typescript): The 'Gang of Four' Design Patterns in TypeScript
+ - [ts-migrate](https://github.com/airbnb/ts-migrate/tree/master/packages/ts-migrate): A tool to help migratge your JavaScript codebase to TypeScript
+ - [Prisma](https://www.prisma.io/) A Node.js/TypeScript ORM with powerful tools for generating APIs and Schemas from existing databases
+ - [Zod](https://github.com/colinhacks/zod): A TypeScript first runtime validation library
+ - [tRPC](https://github.com/trpc/trpc): End-to-end type-safe APIs without GraphQL
+ - [prisma-trpc-generator](https://github.com/omar-dulaimi/prisma-trpc-generator): Auto-generate tRPC APIs from your Prisma schemas
+ - [zod-prisma](https://github.com/CarterGrimmeisen/zod-prisma): Automatically generate Zod validators from your Prisma schemas
+ - [transform.tools](https://transform.tools/) A tool that can help transform code between Flow/Typescript/JSON Schema/GraphQL and so much more!
+ - [FreeCodeCamp: How to add TypeScript to a JavaScript Project](https://www.freecodecamp.org/news/how-to-add-typescript-to-a-javascript-project/)
+
+## Examples:
+
 To run an example, first fork this repository and `cd` into the directory. Then, follow the instructions for the example below.
 
 ## Example 1: Prisma + tRPC + Postgres + Zod
