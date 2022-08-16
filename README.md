@@ -10,6 +10,7 @@ All of the examples in this repo (and many more!) can be found here: https://git
 [Jack Herrington on Youtube](https://www.youtube.com/c/JackHerrington): Fun, fast-paced videos covering so many full-stack TypeScript technologies, with a focus on production environments.
 [No BS TS](https://no-bs-ts.myshopify.com/): A book that's all about getting you up to speed on TypeScript as fast, and as practically as possible.
 [TypeScript Cheat Sheets](https://github.com/typescript-cheatsheets): A collection of the best TypeScript cheatsheets for almost any framework!
+[Design Patterns in TypeScript](https://github.com/torokmark/design_patterns_in_typescript): The 'Gang of Four' Design Patterns in TypeScript
 [ts-migrate](https://github.com/airbnb/ts-migrate/tree/master/packages/ts-migrate): A tool to help migratge your JavaScript codebase to TypeScript
 [Prisma](https://www.prisma.io/) A Node.js/TypeScript ORM with powerful tools for generating APIs and Schemas from existing databases
 [Zod](https://github.com/colinhacks/zod): A TypeScript first runtime validation library
