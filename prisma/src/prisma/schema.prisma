@@ -1,0 +1,29 @@
+generator client {
+  provider    = "prisma-client-js"
+  modelCase   = "PascalCase"
+  modelSuffic = "Schema"
+}
+
+generator zod {
+  provider              = "zod-prisma"
+  output                = "../zod"
+  modelCase             = "PascalCase"
+  useDecimalJs          = "true"
+  relationModel         = "true"
+  imports               = ""
+  prismaJsonNullability = "true"
+  modelSuffix           = "Model"
+}
+
+generator trpc {
+  provider       = "prisma-trpc-generator"
+  output         = "../trpc"
+  withMiddleware = "false"
+  withShield     = "false"
+  contextPath    = "../../../context"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}

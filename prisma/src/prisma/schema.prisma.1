@@ -14,3 +14,8 @@ generator zod {
   relationModel         = "true"
   modelSuffix           = "Model"
 }
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
