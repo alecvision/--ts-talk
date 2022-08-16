@@ -1,23 +1,23 @@
 generator client {
   provider    = "prisma-client-js"
+  modelSuffix = "Schema"
   modelCase   = "PascalCase"
-  modelSuffic = "Schema"
 }
 
 generator zod {
   provider              = "zod-prisma"
-  output                = "../zod"
+  output                = "../src/zod"
+  relationModel         = "true"
+  modelSuffix           = "Model"
   modelCase             = "PascalCase"
   useDecimalJs          = "true"
-  relationModel         = "true"
-  imports               = ""
   prismaJsonNullability = "true"
-  modelSuffix           = "Model"
+  imports               = ""
 }
 
 generator trpc {
   provider       = "prisma-trpc-generator"
-  output         = "../trpc"
+  output         = "../src/trpc"
   withMiddleware = "false"
   withShield     = "false"
   contextPath    = "../../../context"
